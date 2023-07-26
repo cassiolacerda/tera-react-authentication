@@ -15,7 +15,7 @@ export default function Users() {
   React.useEffect(() => {
     const token = getToken();
 
-    fetch("http://localhost:4000/users/all", {
+    fetch("http://localhost:4000/users", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
